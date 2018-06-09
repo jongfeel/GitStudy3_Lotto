@@ -23,7 +23,11 @@
         return lottoNumbers;
     }
     let checkLogic1 = () => {
-        // TODO feature/checkLogic1
+    for(var i=0; i<numbers.length; i++){
+        var no = numbers[i];
+        if( numbers.indexOf(no+1)>=0 && numbers.indexOf(no+2)>=0 ) return true;
+    }
+    return false;
     }
     let checkLogic2 = () => {
         // TODO feature/checkLogic2
