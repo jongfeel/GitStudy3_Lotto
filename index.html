@@ -21,13 +21,22 @@
             if ( lottoNumbers.indexOf(no) === -1 ) lottoNumbers.push(no);
         }
         return lottoNumbers;
-    }
-    let checkLogic1 = () => {
+    };
+    
+    let checkLogic1 = (numbers) => {
         // TODO feature/checkLogic1
-    }
-    let checkLogic2 = () => {
+    };
+
+    let checkLogic2 = (numbers) => {
         // TODO feature/checkLogic2
+        var decArea = [0, 0, 0, 0, 0];
+    for(var i=0; i<numbers.length; i++){
+        var area = Math.floor( numbers[i]/10 );
+        decArea[area]++;
     }
+    return ( decArea[0]>2 || decArea[1]>2 || decArea[2]>2 || decArea[3]>2 || decArea[4]>2 )
+    };
+
     window.onload = () => {
         let lottoNumbers = genNumbers();
 
