@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -15,8 +15,12 @@
 
     <script>
     window.onload = () => {
-        // To do: show number of NUMBERS div
-        console.log("onload");
+    var lottoNumbers = [];
+    while (lottoNumbers.length<6) {
+        var no = Math.round(Math.random()*45);
+        if( lottoNumbers.indexOf(no) === -1 ) lottoNumbers.push(no);
+    }
+    document.getElementById("NUMBERS").innerHTML = lottoNumbers.join(" ");
     }
     </script>
 </body>
