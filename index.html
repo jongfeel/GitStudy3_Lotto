@@ -20,7 +20,7 @@
     let genNumbers = () => {
         let lottoNumbers = [];
         while (lottoNumbers.length<6) {
-            let no = Math.round(Math.random()*45);
+            let no = Math.round(Math.random()*45)+1;
             if ( lottoNumbers.indexOf(no) === -1 ) lottoNumbers.push(no);
         }
         return lottoNumbers;
