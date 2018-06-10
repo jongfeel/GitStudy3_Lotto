@@ -1,0 +1,18 @@
+#NUMBERS
+{
+    margin-top: 40vh;
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+}
+
+b 
+{
+     display: inline-block;
+     width: 128px;
+     height: 128px;
+     line-height: 128px;
+     border-radius: 64px;
+     margin: 16px;
+     background: #999;
+}
